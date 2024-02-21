@@ -116,6 +116,7 @@ block to open the **Sprite Editor**.
 ![Image editor](/static/tutorials/chase-the-pizza/draw.gif)
 
 hint~
+duy anh cu chuoi
 
 
 
