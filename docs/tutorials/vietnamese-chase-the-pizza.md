@@ -117,6 +117,7 @@ block to open the **Sprite Editor**.
 
 hint~
 duy anh cu chuoi
+duong veo cu chuoi
 
 
 
