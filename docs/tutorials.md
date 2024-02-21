@@ -32,7 +32,9 @@
     "editor": "py",
     "cardType": "tutorial"
   }]
-}, {
+}
+<!-- , 
+{
   "name": "Create a Music Player",
   "description": "Join the Zune prototyping crew and make your own music player with this tutorial from MakeCode Arcade!",
   "url": "/tutorials/music",
@@ -197,7 +199,7 @@
   "imageUrl": "/static/recipes/side-scroller/car-race.png",
   "largeImageUrl": "/static/recipes/side-scroller/car-race.gif",
   "videoUrl": "/static/recipes/side-scroller/car-race.mp4"
-}
+} -->
 ]
 ```
 
