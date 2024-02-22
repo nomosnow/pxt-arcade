@@ -15,9 +15,8 @@
     {
         "name": "Tutorials",
         "url": "/tutorials",
-        "imageUrl": "/static/tutorials/interface/info.png",
-        "largeImageUrl": "/static/tutorials/interface/info.png",
-        "videoUrl": "/static/tutorials/chase-the-pizza.mp4"
+        "imageUrl": "/static/tutorials/music/zune.png",
+        "largeImageUrl": "/static/tutorials/music/zune.png"
     },
     {
         "name": "Multiplayer Tutorials",
