@@ -1,64 +1,8 @@
-# Chase the Pizza
-### @explicitHints true
-
-
-### ~button /#tutorial:/tutorials/chase-the-pizza
-
-Try this tutorial!
-
-### ~
-
-## Introduction @showdialog
-
-![Game animation](/static/tutorials/chase-the-pizza/chasing.gif)
-
-Create a game where the goal is to eat as much pizza as you can 
-before the time runs out! 
-
+# Game: Cá Lớn Nuốt Cá Bé
 
 ## {Step 1}
 
-**Set the background color**
-
----
-
-- :tree: Open the <br/><br/>
-``||scene:Scene||``<br/>
-toolbox drawer and drag <br/>
-``||scene:set background color [ ]||`` <br/>
-into **the empty** ``||loops(noclick):on start||`` container already in your workspace. 
-
-~hint What does that mean? 🤷🏽
-
----
-
-When giving instructions, we'll highlight some text to give you a better idea of what you are looking for.
-
-For example, when we suggest the <br/>
-``||scene:set background color to [ ]||``<br/>
-block, we are pointing you toward <br/>
-
-```block
-scene.setBackgroundColor(13)
-```
-
-hint~
-
-💡 _Feel free to choose your own color if you don't like the swatch in the block._ 
-
-
----
-
-- :mouse pointer: Click the button that says **Next** to go to the 
-next step of the tutorial.
-
-
-#### ~ tutorialhint
-```blocks
-// @highlight
-scene.setBackgroundColor(13)
-```
-
+Here is some text.
 
 ## {Step 2}
 
