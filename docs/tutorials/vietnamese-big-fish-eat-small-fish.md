@@ -84,7 +84,7 @@ Nhân vật chính của chúng ta cũng là sprite.
 hint~
 
 
-~hint Show me 🔍
+~hint Chỉ Tôi 🔍
 
 ![Add a sprite block](/static/tutorials/chase-the-pizza/mySprite.gif)
 
@@ -110,7 +110,7 @@ mySprite = sprites.create(img`.`, SpriteKind.Player)
 
 - :mouse pointer: Nhấn **Done** sau khi bạn vẽ xong.
 
-~hint Show me 🔍
+~hint Chỉ Tôi 🔍
 
 ![Image editor](/static/tutorials/chase-the-pizza/draw.gif)
 
@@ -158,7 +158,7 @@ và đặt xuống dưới dòng cuối cùng của khối<br/>
 Bây giờ thì bạn có thể di chuyển nhân vật của mình bằng nút lên xuống trái phải (hoặc là w s a d). 
 
 
-~hint Show me 🔍
+~hint Chỉ Tôi 🔍
 
 ![Add the move block](/static/tutorials/chase-the-pizza/move.gif)
 
@@ -227,7 +227,7 @@ controller.moveSprite(mySprite)
 
 ---
 
-~hint Show me 🔍
+~hint Chỉ Tôi 🔍
 
 ![Change the pizza to food](/static/tutorials/chase-the-pizza/food.gif)
 
