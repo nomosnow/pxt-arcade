@@ -5,6 +5,21 @@
 
 ```codecard
 [
+{
+  "name": "Cá Lớn Nuốt Cá Bé",
+  "description": " Game Cá Lớn Nuốt Cá Bé",
+  "url": "/tutorials/vietnamese-big-fish-eat-small-fish",
+  "cardType": "tutorial",
+  "imageUrl": "/static/tutorials/music/zune.png",
+  "largeImageUrl": "/static/tutorials/music/zune.png",
+  "label": "Bạn mới lập trình? thử vào đây",
+  "labelClass": "orange ribbon large"
+}
+]
+```
+
+<!-- ```codecard
+[
 
 {
   "name": "Intro to MakeCode Arcade",
@@ -15,9 +30,7 @@
   "largeImageUrl": "/static/tutorials/interface/info.png",
   "label": "New? Try This!",
   "labelClass": "orange ribbon large"
-}
-,
-{
+},{
   "name": "Chase the Pizza",
   "description": "Get started creating a simple game to chase a pizza around the screen and collect as many points as possible before time runs out!",
   "url": "/tutorials/chase-the-pizza",
@@ -34,9 +47,7 @@
     "editor": "py",
     "cardType": "tutorial"
   }]
-}
-<!-- , 
-{
+}, {
   "name": "Create a Music Player",
   "description": "Join the Zune prototyping crew and make your own music player with this tutorial from MakeCode Arcade!",
   "url": "/tutorials/music",
@@ -201,9 +212,9 @@
   "imageUrl": "/static/recipes/side-scroller/car-race.png",
   "largeImageUrl": "/static/recipes/side-scroller/car-race.gif",
   "videoUrl": "/static/recipes/side-scroller/car-race.mp4"
-} -->
+}
 ]
-```
+``` -->
 
 ## {See Also}
 
