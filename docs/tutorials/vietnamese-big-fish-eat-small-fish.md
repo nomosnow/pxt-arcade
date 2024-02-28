@@ -9,9 +9,9 @@ Try this tutorial!
 
 ### ~
 
-## Introduction @showdialog
+## Giới thiệu @showdialog
 
-Mục đích của game này là bạn kiếm nhiều điểm nhất để ăn cá con.
+Mục đích của game này là ăn cá con để đạt được nhiều điểm nhất.
 
 
 ## {Step 2}
@@ -22,19 +22,19 @@ Mục đích của game này là bạn kiếm nhiều điểm nhất để ăn c
 
 - :tree: Mở <br/>
 ``||scene:Scene||``<br/>
-từ toolbox, giữ và kéo <br/>
+từ bộ công cụ (toolbox), giữ và kéo khối<br/>
 ``||scene:set background color [ ]||`` <br/>
- đặt vào trong hộp trống ``||loops(noclick):on start||`` bên ngoài màn hình chính. 
+ thả vào khe trống của hộp ``||loops(noclick):on start||`` bên ngoài màn hình chính. 
 
-~hint Nếu Bạn không biết làm thì nhấn vào đây 🤷🏽
+~hint Nếu bạn chưa hiểu cách làm, hãy nhấn vào đây 🤷🏽
 
 ---
 
-Khi có hướng dẫn, đoạn code đã được bôi màu dễ nhìn để sử dụng vào viết chương trình
+Khi có hướng dẫn, có thể tương tác với các đoạn code (đã được bôi màu dễ nhìn hơn) để thuận tiện việc viết chương trình
 
 Ví dụ, khi chương trình gợi ý <br/>
 ``||scene:set background color to [ ]||``<br/>
-bạn nên chỉ và nhấn chuột vào, thanh công cụ sẽ hiện lên cho bạn chọn sử dụng  <br/>
+bạn chỉ cần đưa chuột vào cụm từ đó và nhấn chuột, thanh công cụ sẽ tự động hiện lên mục tương ứng để bạn chọn sử dụng  <br/>
 
 ```block
 scene.setBackgroundColor(13)
@@ -42,12 +42,12 @@ scene.setBackgroundColor(13)
 
 hint~
 
-💡 _Hãy tuỳ chọn màu sắc mà bạn yêu thích_ 
+💡 _Hãy thay đổi sang màu sắc mà bạn yêu thích bằng cách kích vào ô màu mặc định_ 
 
 
 ---
 
-- :mouse pointer: Nhấn **Next** để đi qua bước tiếp theo.
+- :mouse pointer: Nhấn **Next** để sang bước tiếp theo.
 
 
 #### ~ tutorialhint
@@ -63,9 +63,9 @@ scene.setBackgroundColor(13)
 
 ---
 
-- :paper plane: Mở ``||sprites:Sprites||`` giữ chuột và kéo <br/>
+- :paper plane: Mở ``||sprites:Sprites||`` , giữ chuột và kéo <br/>
 ``||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||`` <br/>
- đặt dưới cuối của khối  ``||loops(noclick):on start||`` .
+ thả vào cuối của khối  ``||loops(noclick):on start||`` .
 
 ---
 
@@ -74,17 +74,16 @@ scene.setBackgroundColor(13)
 
 ---
 
- Trong chương trình, mỗi một nhân vật, đồ vật, hình ảnh ... đều được gọi là **SPRITE**.
+ Trong chương trình, mỗi một nhân vật, đồ vật, đối tượng ... đều được gọi là **SPRITE**.
 
--- Bạn có thể thay đổi hiện trạng của Sprites như thay đội vị trí, hình ảnh, tên, thời gian sống sót ...
-.
+ Bạn có thể thay đổi hiện trạng của Sprites như: vị trí, hình ảnh, tên, thời gian sống sót ...
 
-Nhân vật chính của chúng ta cũng là sprite.
+Nhân vật chính được điều khiển trong chương trình của chúng ta cũng thường là sprite.
 
 hint~
 
 
-~hint Chỉ Tôi 🔍
+~hint Hướng dẫn bằng hình ảnh 🔍
 
 ![Add a sprite block](/static/tutorials/chase-the-pizza/mySprite.gif)
 
@@ -100,17 +99,17 @@ mySprite = sprites.create(img`.`, SpriteKind.Player)
 ```
 
 ## {Step 4}
-**Vẽ hình cho nhân vật chính**
+**Tạo hình cho nhân vật chính**
 
-- :mouse pointer: Vẽ hình cho sprite bằng cách di chuyển và bấm chuột vào ô vuông màu xám trên <br/> 
+- :mouse pointer: Tạo hình cho nhân vật (sprite) bằng cách di chuyển và bấm chuột vào ô vuông màu xám trên <br/> 
 ``||variables(sprites):set [mySprite] to sprite [ ] of kind [Player]||`` <br/>
  để mở **Sprite Editor**. <br/>
- Bạn có thể mở **Gallery** để chọn và chỉnh sửa hình ảnh của nhân vật.
+ Bạn có thể mở **Gallery** để chọn và chỉnh sửa hình ảnh của nhân vật theo các mẫu có sẵn.
 
 
-- :mouse pointer: Nhấn **Done** sau khi bạn vẽ xong.
+- :mouse pointer: Nhấn **Done** sau khi bạn hoàn thành.
 
-~hint Chỉ Tôi 🔍
+~hint Hướng dẫn bằng hình ảnh 🔍
 
 ![Image editor](/static/tutorials/chase-the-pizza/draw.gif)
 
@@ -146,19 +145,19 @@ mySprite = sprites.create(img`
 
 ## {Step 5}
 
-**Làm nhân vật chính chuyển động theo sự điều khiển của mình**
+**Làm nhân vật chính di chuyển theo sự điều khiển của mình**
 
 ---
 
-- :game: Mở ``||controller:Controller||`` ấn chuột, kéo<br/> 
+- :game: Mở ``||controller:Controller||`` giữ chuột, kéo<br/> 
 ``||controller:move [mySprite] with buttons||``<br/>
-và đặt xuống dưới dòng cuối cùng của khối<br/>
-``||loops(noclick):on start||`` đã có sẵn.
+thả vào dòng cuối cùng của khối<br/>
+``||loops(noclick):on start||`` đã có sẵn trên màn hình chính.
 
-Bây giờ thì bạn có thể di chuyển nhân vật của mình bằng nút lên xuống trái phải (hoặc là w s a d). 
+Giờ thì bạn có thể di chuyển nhân vật của mình bằng nút lên xuống trái phải (hoặc là w s a d). 
 
 
-~hint Chỉ Tôi 🔍
+~hint Hướng dẫn bằng hình ảnh 🔍
 
 ![Add the move block](/static/tutorials/chase-the-pizza/move.gif)
 
@@ -196,10 +195,10 @@ controller.moveSprite(mySprite)
 
 ## {Step 6}
 
-**Thử Trò chơi của mình trên máy**
+**Thử trò chơi của mình trên máy**
 - :binoculars:  Thử trò chơi của mình trên máy!
-
- Giờ bạn có thể di chuyển nhân vật của mình xung quanh màn hình.
+<br/>
+ Giờ bạn có thể di chuyển nhân vật của mình xung quanh màn hình (sử dụng các phím mũi tên).
 
 
 ![Look for the game window in the lower right](/static/tutorials/chase-the-pizza/game.png)
@@ -216,18 +215,18 @@ controller.moveSprite(mySprite)
 
 ---
 
-- :paper plane: Mở ``||sprites:Sprites||``ấn giữ và kéo<br/> 
-``||variables(sprites):set [pizza] to sprite [ ] of kind [Player]||``<br/> 
-đặt xuống cuối của khối <br/>
-``||loops(noclick):on start||``trên màn hình.
+- :paper plane: Mở ``||sprites:Sprites||`` ấn giữ và kéo<br/> 
+``||variables(sprites):set [ca_con] to sprite [ ] of kind [Player]||``<br/> 
+thả vào cuối của khối <br/>
+``||loops(noclick):on start||`` trên màn hình.
 
 
-- :mouse pointer: Ấn **Player** in<br/>
-``||variables(noclick):set [pizza] to sprite [ ] of kind [Player]||``<br/> và chọn  **Food**. Trong tiếng anh Food nghĩa là thức ăn.
+- :mouse pointer: Kích chuột vào **Player** trong khối<br/>
+``||variables(noclick):set [ca_con] to sprite [ ] of kind [Player]||``<br/> và đổi thành  **Food**. (Trong tiếng anh Food nghĩa là thức ăn).
 
 ---
 
-~hint Chỉ Tôi 🔍
+~hint Hướng dẫn bằng hình ảnh 🔍
 
 ![Change the pizza to food](/static/tutorials/chase-the-pizza/food.gif)
 
@@ -235,14 +234,14 @@ hint~
 
 
 ```blockconfig.local
-let pizza = sprites.create(img`.`, SpriteKind.Player)
+let ca_con = sprites.create(img`.`, SpriteKind.Player)
 ```
 
 
 #### ~ tutorialhint
 ```blocks
 let mySprite: Sprite = null
-let pizza: Sprite = null
+let ca_con: Sprite = null
 scene.setBackgroundColor(13)
 mySprite = sprites.create(img`
 . . . . 5 5 5 5 5 5 5 . . . . . 
@@ -264,31 +263,34 @@ mySprite = sprites.create(img`
 `, SpriteKind.Player)
 controller.moveSprite(mySprite)
 // @highlight
-pizza = sprites.create(img`.`, SpriteKind.Food)
+ca_con = sprites.create(img`.`, SpriteKind.Food)
 ```
 
 
 ## {Step 8}
 
+**Tạo hình cho cá con**
 
-- :mouse pointer: Choose your pizza by clicking the empty grey square inside <br/> 
+---
+
+- :mouse pointer: Thay đổi hình ảnh của mồi săn (cá con) bằng cách kích chuột vào ô màu xám trong khối <br/> 
 ``||variables(noclick):set [pizza] to sprite [ ] of kind [Food]||`` <br/>
-to open the **Sprite Editor**. 
+để mở chức năng **Sprite Editor**. 
 
-- :mouse pointer: Switch to the **Gallery** tab at the top. 
+- :mouse pointer: Chọn mục **Gallery** phía trên nếu muốn dùng các mẫu có sẵn. 
 ![Select the gallery](/static/skillmap/assets/gallery.png)
 
 
-- :mouse pointer: Choose your pizza, then click **Done**.
+- :mouse pointer: Kích chuột vào mẫu ưng ý, rồi ấn **Done**.
 
-~hint Show me 🔍
+~hint Hướng dẫn bằng hình ảnh 🔍
 
 ![Image gallery](/static/tutorials/chase-the-pizza/gallery.gif)
 
 hint~
 
 
-💡 _Feel free to draw your own pizza if you prefer!_
+💡 _Bạn có thể thoả sức sáng tạo cá con mình thích nếu không muốn sử dụng mẫu có sẵn nhé!_
 
 ```blockconfig.local
 let pizza = sprites.create(img`.`, SpriteKind.Player)
@@ -343,16 +345,16 @@ b 5 5 5 5 d d 4 4 4 4 . . . . .
 
 ## {Step 9}
 
-**Make something happen when the sprites overlap!**
+**Thiết lập khi nhân vật chính ăn được mồi**
 
 ---
 
-- :paper plane: Open ``||sprites:Sprites||`` and drag the<br/>
+- :paper plane: Mở công cụ ``||sprites:Sprites||`` kéo khối<br/>
 ``||sprites:on [sprite] of kind [Player] overlaps [otherSprite] of kind [Food]||``<br/>
-container into **an empty area** of the workspace.
+và thả vào **Khu vực trống bất kì** trên màn hình chính.
 
 
-🤷🏽‍♀️ _Need help? Click the lightbulb in the circle below to see what blocks you need in this step._
+🤷🏽‍♀️ _Sử dụng gợi ý (hình bóng đèn phía dưới) nếu bạn không biết phải tìm đối tượng cần kéo thả._
 
 
 
@@ -373,15 +375,15 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Step 10}
 
-**Add a point when the sprites overlap**
+**Tính điểm khi nhân vật chính ăn được mồi**
 
 ---
 
-- :id card: Open ``||info:Info||`` and drag<br/> 
+- :id card: Mở công cụ ``||info:Info||`` , kéo khối <br/> 
 ``||info:change score by [1]||``<br/> 
-into **the empty** <br/>
+và thả vào **khe trống** của khối <br/>
 ``||sprites(noclick):on [sprite] ... overlaps [otherSprite]||`` <br/>
-container already in the workspace.
+mà ta vừa đặt ở màn hình chính.
 
 
 ```blockconfig.local
@@ -403,43 +405,43 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 ## {Step 11}
 
 
-- :binoculars: Check your game!
+- :binoculars: **Kiểm tra chương trình của bạn!**
 
-Notice that you get WAAAYYYYY too many points when your player 
-sprite overlaps the pizza?  
+Bạn có thấy mỗi lần nhân vật chính chạm vào con mồi thì nó không ăn mồi? điểm số thì vẫn tăng lên liên tục, nhưng con mồi mới thì không xuất hiện thêm không? Điều này quả là không hợp lý nhỉ?   
 
-We'll fix that in the next step.
+Hãy cùng sửa nhé!
 
 
 
 
 ## {Step 12}
 
-**Teleport the pizza to a random location each time the sprites overlap.**
+**Cho con mồi mới xuất hiện một các ngẫu nhiên**
 
-~hint What is random? 🤷🏽‍♀️
+
+~hint Ngẫu nhiên nghĩa là gì? 🤷🏽‍♀️
 
 ---
 
-A "random" number is a value that you can't predict ahead of time. 
+Giá trị **ngẫu nhiên** thể hiện việc nhân vật có thể xuất hiện ở bất cứ đâu trên màn hình. 
 
-In Arcade, we use this block:
+Trong các chương trình, ta sử dụng khối:
 
 ```block
 randint(0, scene.screenWidth())
 ```
 
-to ask for a random number between **0** and the **width of the screen**.
+Và thiết lập giá trị biến đổi có thể có giá trị nhỏ nhất là **0** và lớn nhất có thể bằng độ lớn của  **màn hình hiển thị**.
 
 hint~
 
 ---
 
-- :paper plane: Open ``||sprites:Sprites||``, and drag <br/>
-``||sprites:set [pizza] position to...||``<br/> 
-into the **end of the** <br/>
+- :paper plane: Trong công cụ ``||sprites:Sprites||`` ,kéo khối <br/>
+``||sprites:set [sprite] position to...||``<br/> 
+và thả vào **cuối khe trống** trong khối <br/>
 ``||sprites(noclick):on [sprite] ... overlaps [otherSprite]||`` <br/>
-container already in the workspace.
+trên màn hình chính.
 
 
 ```blockconfig.local
@@ -461,16 +463,17 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Step 13}
 
-**Let’s start a countdown each time the sprites overlap.**
+**Thiết lập thời gian tối đa cho một lần ăn mồi**
 
 ---
 
-- :id card: From ``||info:Info||``, drag <br/>
+- :id card: Từ công cụ ``||info:Info||``, ta kéo khối <br/>
 ``||info:start countdown [3] (s)||`` <br/> 
-into the **end of the** <br/>
+và thả vào **cuối khe trống** trong khối <br/>
 ``||sprites(noclick):on [sprite] ... overlaps [otherSprite]||`` <br/>
-container already in the workspace.
+trên màn hình chính.
 
+Bạn có thể thay đổi thời gian tối đa cho 1 lần săn mồi bằng cách kích vào ô giá trị và thay đổi bằng giá trị bạn mong muốn.
 
 ```blockconfig.local
 let pizza = sprites.create(img`.`, SpriteKind.Player)
@@ -490,13 +493,13 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSpr
 
 ## {Finale}
 
-**🎉 Great job! 🎉**
+**🎉 Tuyệt vời! 🎉**
 
-You've made a **Chase the Pizza** game.
+Bạn đã hoàn thành chương trình **Cá lớn nuốt cá bé** .
 
-Try playing your game. How many points can you get before time runs out?
+Hãy kiểm tra thành quả của mình và thử xem kỷ lục điểm số có thể đạt được của bản thân là bao nhiêu nhé!
 
-When you're finished playing, click **Done** to share your game with family and friends!
+Ngoài ra, đừng ngại chia sẻ thành quả này với bạn bè và xem ai là người chơi giỏi nhất nhé!
 
 
 
